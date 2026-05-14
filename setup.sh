@@ -21,10 +21,10 @@ cp /usr/share/windows-resources/mimikatz/x64/mimikatz.exe ./serve/mimikatz_win64
 cp /usr/share/windows-resources/mimikatz/Win32/mimikatz.exe ./serve/mimikatz_win32
 
 # Download Linpeas & Winpeas
-curl -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh | tee serve/linpeas.sh
-curl -L https://raw.githubusercontent.com/peass-ng/PEASS-ng/refs/heads/master/winPEAS/winPEASbat/winPEAS.bat | tee serve/winpeas.bat
-curl -L https://raw.githubusercontent.com/peass-ng/PEASS-ng/refs/heads/master/winPEAS/winPEASps1/winPEAS.ps1 | tee serve/winpeas.ps1
-curl -L https://github.com/peass-ng/PEASS-ng/releases/download/20260510-cd4bd619/winPEASx64.exe | tee serve/winpeas.exe
+wget -P serve/  https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh
+wget -P serve/  https://raw.githubusercontent.com/peass-ng/PEASS-ng/refs/heads/master/winPEAS/winPEASbat/winPEAS.bat
+wget -P serve/ https://raw.githubusercontent.com/peass-ng/PEASS-ng/refs/heads/master/winPEAS/winPEASps1/winPEAS.ps1
+wget -P serve/ https://github.com/peass-ng/PEASS-ng/releases/download/20260510-cd4bd619/winPEASx64.exe
 
 
 
